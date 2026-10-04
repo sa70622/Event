@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <header>
+
+    <nav class="flex flex-col md:flex-row justify-between items-center gap-3 px-3 md:px-8 py-4 bg-black text-white">
+
+  <h2 class="text-2xl font-bold text-orange-500">
+    Music Night
+  </h2>
+    
+  <ul class="flex flex-wrap justify-center gap-x-3 gap-y-2 md:gap-8 text-sm md:text-base">
+    <a href="index.html">Home</a>
+    <li><a href="./Speeker.html" class="hover:text-orange-500">Speakers</a></li>
+    
+  <li>
+  <a href="./schedule.html" class="hover:text-orange-500">Schedule </a></li>
+
+    
+
+  
+
+
+
+    
+
+    <li><a href="./Ragister.html" class="hover:text-orange-500">Register</a></li>
+  </ul>
+
+</nav>
+
+  </header>
+
+    <section id="contact" class="bg-black text-white py-20 px-6">
+
+  <div class="text-center mb-12">
+    <p class="text-orange-500 uppercase tracking-widest mb-3">
+      Join the event
+    </p>
+
+    <h2 class="text-4xl md:text-5xl font-bold">
+      Register <span class="text-orange-500">Now</span>
+    </h2>
+
+    <p class="text-gray-400 mt-4">
+      Fill in your details to reserve your pass.
+    </p>
+  </div>
+
+  <form class="max-w-xl mx-auto bg-gray-900 p-8 rounded-xl space-y-6">
+
+    <!-- Name -->
+    <div>
+      <label for="name" class="block mb-2 font-semibold">
+        Full Name
+      </label>
+
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter your name"
+        required
+        class="w-full p-3 rounded-lg bg-gray-800 border border-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-orange-500"
+      >
+    </div>
+
+    <!-- Email -->
+    <div>
+      <label for="email" class="block mb-2 font-semibold">
+        Email Address
+      </label>
+
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+        required
+        class="w-full p-3 rounded-lg bg-gray-800 border border-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-orange-500"
+      >
+
+    </div>
+       <!-- Terms -->
+    <div>
+      <label class="flex items-center gap-3">
+        <input type="checkbox" name="terms" required>
+        I agree to the terms and conditions.
+      </label>
+    </div>
+
+    <!-- Submit -->
+    <button
+      type="submit"
+      class="w-full bg-orange-500 hover:bg-orange-600 py-3 rounded-lg font-bold transition"
+    >
+      Submit Registration
+    </button>
+
+  </form>
+</section>
+
+  </main>
+
+    <section id="tickets" class="bg-gray-950 text-white py-20 px-6">
+
+  <div class="text-center mb-12">
+    <p class="text-orange-500 uppercase tracking-widest mb-3">
+      Book your pass
+    </p>
+
+    <h2 class="text-4xl md:text-5xl font-bold">
+      Ticket <span class="text-orange-500">Pricing</span>
+    </h2>
+
+    <p class="text-gray-400 mt-4">
+      Choose your pass and enjoy the music night.
+    </p>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+    <!-- General Pass -->
+    <article class="bg-gray-900 border border-gray-700 rounded-xl p-8 text-center">
+      <h3 class="text-2xl font-bold mb-4">General</h3>
+
+      <p class="text-4xl font-bold text-orange-500 mb-6">
+        ₹499
+      </p>
+
+      <ul class="text-gray-300 space-y-3 mb-8">
+        <li>Entry to the event</li>
+        <li>Live music performances</li>
+        <li>Food court access</li>
+      </ul>
+
+      <a href="#contact"
+         class="block bg-orange-500 hover:bg-orange-600 py-3 rounded-lg font-bold">
+        Book Now
+      </a>
+    </article>
+
+    <!-- Premium Pass -->
+    <article class="bg-gray-900 border-2 border-orange-500 rounded-xl p-8 text-center">
+      <p class="text-orange-500 font-bold mb-3">Popular</p>
+
+      <h3 class="text-2xl font-bold mb-4">Premium</h3>
+
+      <p class="text-4xl font-bold text-orange-500 mb-6">
+        ₹999
+      </p>
+
+      <ul class="text-gray-300 space-y-3 mb-8">
+        <li>All General benefits</li>
+        <li>Premium viewing area</li>
+        <li>Welcome drink</li>
+      </ul>
+
+      <a href="#contact"
+         class="block bg-orange-500 hover:bg-orange-600 py-3 rounded-lg font-bold">
+        Book Now
+      </a>
+    </article>
+
+    <!-- VIP Pass -->
+    <article class="bg-gray-900 border border-gray-700 rounded-xl p-8 text-center">
+      <h3 class="text-2xl font-bold mb-4">VIP</h3>
+
+      <p class="text-4xl font-bold text-orange-500 mb-6">
+        ₹1999
+      </p>
+
+      <ul class="text-gray-300 space-y-3 mb-8">
+        <li>All Premium benefits</li>
+        <li>VIP seating area</li>
+        <li>Exclusive lounge access</li>
+      </ul>
+
+      <a href="#contact"
+         class="block bg-orange-500 hover:bg-orange-600 py-3 rounded-lg font-bold">
+        Book Now
+      </a>
+    </article>
+
+  </div>
+</section>
+     
+
+</body>
+</html>
